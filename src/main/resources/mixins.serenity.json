@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "compatibilityLevel": "JAVA_8",
+  "package": "dev.kohimanayagato.serenity.mixin.mixins.mixin",
+  "refmap": "mixins.serenity.refmap.json",
+  "mixins": [
+    "MinecraftMixin",
+    "NetworkManagerMixin",
+    "TimerMixin"
+  ],
+  "client": [
+    "EntityPlayerSPMixin"
+  ]
+}

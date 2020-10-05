@@ -1,0 +1,18 @@
+[
+  {
+    "modid": "serenity",
+    "name": "Serenity",
+    "description": "Minecraft 1.12.2 utility mod for anarchy servers",
+    "version": "0.4",
+    "mcversion": "1.12.2",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "KohimaNayagato"
+    ],
+    "credits": "",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
