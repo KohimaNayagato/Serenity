@@ -4,7 +4,7 @@
   
 ## Installing
 
- 1. Install MinecraftForge.
+ 1. Install Minecraft Forge for version 1.12.2
  2. Download the latest version from the releases tab. (If available)
  3. Navigate to your `.minecraft/mods` folder.
  4. Put the downloaded file in the folder.
