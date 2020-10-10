@@ -1,0 +1,8 @@
+1) Add Toggle Command
+2) Add Bind Command
+3) Make AutoCrystal
+4) Make KillAura
+5) More modules
+6) Hide "ClickGUI" module from ClickGUI
+7) Auto32k
+8) Save Configs, ClickGUI window positions and toggled modules
