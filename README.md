@@ -15,3 +15,6 @@
  1. Close the repository. `git clone https://github.com/KohimaNayagato/Serenity.git`
  2. Open the cloned folder in your IDE of choice
  3. Add `-Dfml.coreMods.load=MixinLoader` to VM options.
+
+## Credits
+Thanks to [Kataje](https://github.com/Katatje) for their [ClientAPI](https://github.com/Katatje/ClientAPI)
