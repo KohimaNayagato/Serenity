@@ -129,6 +129,7 @@ jar
                 "FMLCorePluginContainsFMLMod": "true",
                 "FMLCorePlugin": "dev.kohimanayagato.serenity.mixin.loader.MixinLoader",
                 "ForceLoadAsMod": "true",
+		"FMLAT": "serenity_at.cfg"
         )
     }
 }
