@@ -22,6 +22,6 @@ public class ChatSuffix extends Module
 			if (event.getMessage().startsWith(s)) return;
 		}
 
-		event.setMessage(event.getMessage() + " \uFF5C Serenity");
+		event.setMessage(event.getMessage() + " ｜ Serenity");
 	}
 }

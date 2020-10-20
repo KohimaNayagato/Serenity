@@ -15,6 +15,6 @@ public class LoggerUtil
 		StringBuilder messageBuilder = new StringBuilder();
 		if (waterMark) messageBuilder.append("&7[&9Serenity&7] ");
 		messageBuilder.append("&7").append(message);
-		Minecraft.getMinecraft().ingameGUI.getChatGUI().printChatMessage(new TextComponentString(messageBuilder.toString().replace("&", "\u00A7")));
+		Minecraft.getMinecraft().ingameGUI.getChatGUI().printChatMessage(new TextComponentString(messageBuilder.toString().replace("&", "§")));
 	}
 }
