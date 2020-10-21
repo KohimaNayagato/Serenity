@@ -1,7 +1,7 @@
-package me.kohimanayagato.serenity.impl.module.movement;
+package dev.kohimanayagato.serenity.impl.module.movement;
 
-import me.kohimanayagato.serenity.api.module.Category;
-import me.kohimanayagato.serenity.module.Module;
+import dev.kohimanayagato.serenity.api.module.Category;
+import dev.kohimanayagato.serenity.module.Module;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 
