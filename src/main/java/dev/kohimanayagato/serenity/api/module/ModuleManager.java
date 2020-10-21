@@ -29,6 +29,7 @@ public class ModuleManager
 		modules.add(new LongJump("LongJump", "Jumps far", Category.MOVEMENT));
 		modules.add(new ChatSuffix("ChatSuffix", "Adds a suffix to your chat messages", Category.MISC));
 		modules.add(new Speed("Strafe", "Allows you to move faster", Category.MOVEMENT));
+		modules.add(new AutoLog("Sprint", "Automatically toggles sprint for you", Category.MOVEMENT));
 		modules.add(new Surround("Surround", "Places blocks around you", Category.COMBAT));
 		modules.add(new AutoTrap("AutoTrap", "Traps players", Category.COMBAT));
 		modules.add(new Blink("Blink", "Fake lag", Category.EXPLOIT));
