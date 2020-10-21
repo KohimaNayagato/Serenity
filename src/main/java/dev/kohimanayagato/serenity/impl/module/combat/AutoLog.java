@@ -28,7 +28,7 @@ public class AutoLog extends Module
     @SubscribeEvent
     public void onTick(TickEvent.ClientTickEvent event)
     {
-        if (mc.player == null || mc.world == null) return;
+        if (nullCheck()) return;
 
         if (mc.player.getHealth() <= health.getIntegerValue())
         {
