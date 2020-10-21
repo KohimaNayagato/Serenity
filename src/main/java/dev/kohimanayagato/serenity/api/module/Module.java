@@ -50,6 +50,12 @@ public class Module
 		if (isEnabled()) disable();
 		else enable();
 	}
+	
+		public boolean nullCheck()
+	{
+		return mc.player == null || mc.world == null;
+	}
+
 
 	public void addSetting(Setting setting)
 	{
