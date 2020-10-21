@@ -69,7 +69,7 @@ public class AutoTrap extends Module
     @SubscribeEvent
     public void onTick(TickEvent.ClientTickEvent event)
     {
-        if (mc.player == null || mc.world == null) return;
+        if (nullCheck()) return;
 
         if (finished && disable.getBooleanValue()) disable();
 
