@@ -72,7 +72,7 @@ public class LongJump extends Module
 	@SubscribeEvent
 	public void onMove(MoveEvent event)
 	{
-		if (mc.player == null || mc.world == null) return;
+		if (nullCheck()) return;
 
 		if (!(mc.player.movementInput.moveForward != 0f || mc.player.movementInput.moveStrafe != 0f) && jumped)
 		{
