@@ -65,7 +65,7 @@ public class Surround extends Module
     @SubscribeEvent
     public void onTick(TickEvent.ClientTickEvent event)
     {
-        if (mc.player == null || mc.world == null) return;
+        if (nullCheck()) return;
 
         if (finished && (disable.getEnumValue().equalsIgnoreCase("WhenDone") || (disable.getEnumValue().equalsIgnoreCase("OnLeave") && !mc.player.onGround))) disable();
 
