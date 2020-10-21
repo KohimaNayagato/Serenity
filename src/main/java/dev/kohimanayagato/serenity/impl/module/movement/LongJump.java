@@ -3,7 +3,6 @@ package dev.kohimanayagato.serenity.impl.module.movement;
 import dev.kohimanayagato.serenity.api.module.Category;
 import dev.kohimanayagato.serenity.api.module.Module;
 import dev.kohimanayagato.serenity.api.setting.Setting;
-import dev.kohimanayagato.serenity.api.setting.SettingType;
 import dev.kohimanayagato.serenity.impl.event.MoveEvent;
 import net.minecraft.network.play.client.CPacketPlayer;
 import net.minecraftforge.event.entity.living.LivingEvent;
