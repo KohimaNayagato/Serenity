@@ -80,7 +80,7 @@ public class Speed extends Module
 	@SubscribeEvent
 	public void onTick(TickEvent.ClientTickEvent event)
 	{
-		if (mc.player == null || mc.world == null) return;
+		if (nullCheck()) return;
 
 		if (useTimer.getBooleanValue()) ((ITimer) ((IMinecraft) mc).getTimer()).setTickLength(50f / ((timerSpeed.getIntegerValue() + 100) / 100f));
 		else ((ITimer) ((IMinecraft) mc).getTimer()).setTickLength(50f);
