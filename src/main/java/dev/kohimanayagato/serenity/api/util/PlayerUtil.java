@@ -97,4 +97,21 @@ public class PlayerUtil
 
 		return false;
 	}
+
+	public static double getDirection()
+	{
+		float rotationYaw = mc.player.rotationYaw;
+
+		if (mc.player.moveForward < 0f) rotationYaw += 180f;
+
+		float forward = 1f;
+
+		if (mc.player.moveForward < 0f) forward = -0.5f;
+		else if (mc.player.moveForward > 0f) forward = 0.5f;
+
+		if (mc.player.moveStrafing > 0f) rotationYaw -= 90f * forward;
+		if (mc.player.moveStrafing < 0f) rotationYaw += 90f * forward;
+
+		return Math.toRadians(rotationYaw);
+	}
 }

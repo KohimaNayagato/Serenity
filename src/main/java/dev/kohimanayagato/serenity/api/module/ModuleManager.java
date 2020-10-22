@@ -21,15 +21,16 @@ public class ModuleManager
 
 	public ModuleManager()
 	{
-		modules.add(new ClickGUI("ClickGUI", "Toggle modules by clicking on them", Category.RENDER));
+		modules.add(new ClickGUI("ClickGUI", "Toggle modules by clicking on them", Category.HIDDEN));
 		modules.add(new CustomFont("CustomFont", "Use a custom font render instead of Minecraft's default", Category.RENDER));
 		modules.add(new PacketMine("PacketMine", "Mine blocks with packets", Category.EXPLOIT));
 		modules.add(new Timer("Timer", "Speeds up your game", Category.MISC));
 		modules.add(new Criticals("Criticals", "Deal critical hits without jumping", Category.COMBAT));
 		modules.add(new LongJump("LongJump", "Jumps far", Category.MOVEMENT));
 		modules.add(new ChatSuffix("ChatSuffix", "Adds a suffix to your chat messages", Category.MISC));
-		modules.add(new Speed("Strafe", "Allows you to move faster", Category.MOVEMENT));
+		modules.add(new Speed("Speed", "Allows you to move faster", Category.MOVEMENT));
 		modules.add(new AutoLog("Sprint", "Automatically toggles sprint for you", Category.MOVEMENT));
+		modules.add(new AutoLog("Anchor", "Automatically goes into holes for you", Category.MOVEMENT));
 		modules.add(new Surround("Surround", "Places blocks around you", Category.COMBAT));
 		modules.add(new AutoTrap("AutoTrap", "Traps players", Category.COMBAT));
 		modules.add(new Blink("Blink", "Fake lag", Category.EXPLOIT));

@@ -11,19 +11,9 @@ import net.minecraftforge.fml.common.gameevent.TickEvent;
 
 public class LongJump extends Module
 {
-	private final Setting speed = new Setting.Builder(SettingType.INTEGER)
-			.setName("Speed")
-			.setModule(this)
-			.setIntegerValue(30)
-			.setMinIntegerValue(1)
-			.setMaxIntegerValue(100)
-			.build();
+	private final Setting speed = new Setting("Speed", this, 30, 1, 100);
 
-	private final Setting packet = new Setting.Builder(SettingType.BOOLEAN)
-			.setName("Packet")
-			.setModule(this)
-			.setBooleanValue(false)
-			.build();
+	private final Setting packet = new Setting("Packet", this, false);
 
 	private boolean jumped = false;
 	private boolean boostable = false;

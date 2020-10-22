@@ -17,7 +17,7 @@ public class Criticals extends Module
 	@SubscribeEvent
 	public void onPacketSend(PacketSendEvent event)
 	{
-		if (nullCheck()) return;
+        if (nullCheck()) return;
 
 		if (event.getPacket() instanceof CPacketUseEntity && ((CPacketUseEntity) event.getPacket()).getAction() == CPacketUseEntity.Action.ATTACK && mc.player.onGround)
 		{

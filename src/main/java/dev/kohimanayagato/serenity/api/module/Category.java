@@ -6,7 +6,8 @@ public enum Category
 	EXPLOIT("Exploit"),
 	RENDER("Visuals"),
 	MOVEMENT("Movement"),
-	MISC("Miscellaneous");
+	MISC("Miscellaneous"),
+	HIDDEN("Hidden");
 
 	private String name;
 

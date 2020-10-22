@@ -19,6 +19,7 @@ public class ClickGUI extends GuiScreen
 
 		for (Category category : Category.values())
 		{
+			if (category == Category.HIDDEN) continue;
 			Window window = new Window(category, xOffset, 3, 105, 15);
 			windows.add(window);
 			xOffset += 110;
@@ -29,7 +30,6 @@ public class ClickGUI extends GuiScreen
 	public void drawScreen(int mouseX, int mouseY, float partialTicks)
 	{
 		doScroll();
-
 		for (Window window : windows)
 		{
 			window.render(mouseX, mouseY);

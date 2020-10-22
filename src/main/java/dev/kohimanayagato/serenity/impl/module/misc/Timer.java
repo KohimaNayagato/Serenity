@@ -11,13 +11,7 @@ import net.minecraftforge.fml.common.gameevent.TickEvent;
 
 public class Timer extends Module
 {
-	private final Setting speed = new Setting.Builder(SettingType.INTEGER)
-			.setName("Speed")
-			.setModule(this)
-			.setIntegerValue(20)
-			.setMinIntegerValue(1)
-			.setMaxIntegerValue(300)
-			.build();
+	private final Setting speed = new Setting("Speed", this, 20, 1, 300);
 
 	public Timer(String name, String description, Category category)
 	{
