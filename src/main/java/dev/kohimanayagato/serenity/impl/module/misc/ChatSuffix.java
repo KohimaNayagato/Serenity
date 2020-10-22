@@ -17,11 +17,11 @@ public class ChatSuffix extends Module
 	@SubscribeEvent
 	public void onChat(ClientChatEvent event)
 	{
-		for (String s : Arrays.asList("/", ".", "-", ",", ":", ";", "'", "\"", "+", "\\"))
+		for (String s : Arrays.asList("/", ".", "-", ",", ":", ";", "'", "\"", "+", "\\", "$", "*"))
 		{
 			if (event.getMessage().startsWith(s)) return;
 		}
 
-		event.setMessage(event.getMessage() + " ｜ Serenity");
+		event.setMessage(event.getMessage() + " \uff5c Serenity");
 	}
 }
