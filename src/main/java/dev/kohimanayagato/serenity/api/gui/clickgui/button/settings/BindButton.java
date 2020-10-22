@@ -53,7 +53,7 @@ public class BindButton extends SettingButton
 	{
 		if (binding)
 		{
-			if (key == Keyboard.KEY_DELETE || key == Keyboard.KEY_BACK || key == Keyboard.KEY_NONE)
+			if (key == Keyboard.KEY_DELETE || key == Keyboard.KEY_BACK || key == Keyboard.KEY_NONE || key == Keyboard.KEY_ESCAPE)
 			{
 				getModule().setBind(Keyboard.KEYBOARD_SIZE);
 			}
