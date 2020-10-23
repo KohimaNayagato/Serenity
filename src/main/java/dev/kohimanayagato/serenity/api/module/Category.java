@@ -6,7 +6,7 @@ public enum Category
 	EXPLOIT("Exploit"),
 	RENDER("Visuals"),
 	MOVEMENT("Movement"),
-	MISC("Miscellaneous"),
+	CHAT("Chat"),
 	HIDDEN("Hidden");
 
 	private String name;
