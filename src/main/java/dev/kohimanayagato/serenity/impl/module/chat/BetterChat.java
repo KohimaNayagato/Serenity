@@ -17,7 +17,7 @@ import java.util.Arrays;
 public class BetterChat extends Module
 {
 	private final Setting Mode = new Setting("Mode", this, Arrays.asList(
-		"Append",
+		//"Append",
 		"Replace"
 		));
 		
@@ -31,6 +31,7 @@ public class BetterChat extends Module
 	@SubscribeEvent
 	public void onChat(ClientChatEvent event)
 	{
+		/*
 		if ( Mode.getEnumValue().equalsIgnoreCase("Append") ){
 			if ( event.getMessage().contains("shrug")) {
 				event.setMessage(event.getMessage().replace("shrug", "") + " \u00AF\\_(\u30C4)_/\u00AF");
@@ -39,8 +40,9 @@ public class BetterChat extends Module
 			if ( event.getMessage().contains("lenny")) {
 				event.setMessage(event.getMessage().replace("lenny", "") + " ( ͡° ͜ʖ ͡°)");
 			}
-			*/
+			
 		}
+		*/
 		if ( Mode.getEnumValue().equalsIgnoreCase("Replace") ){
 			if ( event.getMessage().contains("shrug") ) {
 				event.setMessage(event.getMessage().replace("shrug", "\u00AF\\_(\u30C4)_/\u00AF"));
