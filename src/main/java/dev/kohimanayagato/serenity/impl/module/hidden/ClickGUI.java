@@ -20,9 +20,7 @@ public class ClickGUI extends Module
 		setBind(Keyboard.KEY_P);
 
 		addSetting(new Setting("Color", this, Arrays.asList(
-				"Red",
-				"Green",
-				"Blue"
+				"Purple"
 		)));
 	}
 
