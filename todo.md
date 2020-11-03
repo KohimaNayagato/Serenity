@@ -5,5 +5,5 @@
 5) More modules
 6) Hide "ClickGUI" module from ClickGUI
 7) Auto32k
-8) Save Configs, ClickGUI window positions and toggled modules
+~~8) Save Configs, ClickGUI window positions and toggled modules~~
 9) Make default ClickGUI theme White + Purple
