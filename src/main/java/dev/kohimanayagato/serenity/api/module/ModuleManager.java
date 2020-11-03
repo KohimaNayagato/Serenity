@@ -22,20 +22,33 @@ public class ModuleManager
 
 	public ModuleManager()
 	{
+		// Hidden Category
 		modules.add(new ClickGUI("ClickGUI", "Toggle modules by clicking on them", Category.HIDDEN));
+
+		// Render Category
 		modules.add(new CustomFont("CustomFont", "Use a custom font render instead of Minecraft's default", Category.RENDER));
+
+		// Exploit Category
 		modules.add(new PacketMine("PacketMine", "Mine blocks with packets", Category.EXPLOIT));
 		modules.add(new Timer("Timer", "Speeds up your game", Category.EXPLOIT));
+		modules.add(new Blink("Blink", "Fake lag", Category.EXPLOIT));
+
+		// Combat Category
 		modules.add(new Criticals("Criticals", "Deal critical hits without jumping", Category.COMBAT));
-		modules.add(new LongJump("LongJump", "Jumps far", Category.MOVEMENT));
-		modules.add(new ChatSuffix("ChatSuffix", "Adds a suffix to your chat messages", Category.CHAT));
-		modules.add(new Speed("Speed", "Allows you to move faster", Category.MOVEMENT));
-		modules.add(new AutoLog("Sprint", "Automatically toggles sprint for you", Category.MOVEMENT));
-		modules.add(new AutoLog("Anchor", "Automatically goes into holes for you", Category.MOVEMENT));
 		modules.add(new Surround("Surround", "Places blocks around you", Category.COMBAT));
 		modules.add(new AutoTrap("AutoTrap", "Traps players", Category.COMBAT));
-		modules.add(new Blink("Blink", "Fake lag", Category.EXPLOIT));
 		modules.add(new AutoLog("AutoLog", "Automatically logs out when your health is low", Category.COMBAT));
+
+		// Movement Category
+		modules.add(new Speed("Speed", "Allows you to move faster", Category.MOVEMENT));
+		modules.add(new Sprint("Sprint", "Automatically toggles sprint for you", Category.MOVEMENT));
+		modules.add(new Anchor("Anchor", "Automatically goes into holes for you", Category.MOVEMENT));
+		modules.add(new LongJump("LongJump", "Jumps far", Category.MOVEMENT));
+
+		// Chat Category
+		modules.add(new ChatSuffix("ChatSuffix", "Adds a suffix to your chat messages", Category.CHAT));
+		modules.add(new Shrug("Shrug", "Adds the shrug emoji when used", Category.CHAT));
+
 	}
 
 	public ArrayList<Module> getModules()
