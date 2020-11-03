@@ -12,7 +12,7 @@ import dev.kohimanayagato.serenity.api.setting.SettingType;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-
+//MADE BY LNADAV SOMETIME IN NOVEMBER 2020
 
 public class BetterChat extends Module
 {
@@ -35,17 +35,21 @@ public class BetterChat extends Module
 			if ( event.getMessage().contains("shrug")) {
 				event.setMessage(event.getMessage().replace("shrug", "") + " \u00AF\\_(\u30C4)_/\u00AF");
 			}
+			/*
 			if ( event.getMessage().contains("lenny")) {
 				event.setMessage(event.getMessage().replace("lenny", "") + " ( ͡° ͜ʖ ͡°)");
 			}
+			*/
 		}
 		if ( Mode.getEnumValue().equalsIgnoreCase("Replace") ){
 			if ( event.getMessage().contains("shrug") ) {
 				event.setMessage(event.getMessage().replace("shrug", "\u00AF\\_(\u30C4)_/\u00AF"));
 			}
+			/*
 			if ( event.getMessage().contains("lenny") ) {
 				event.setMessage(event.getMessage().replace("lenny", " ( ͡° ͜ʖ ͡°) "));
 			}
+			*/
 		}
 	}
 }

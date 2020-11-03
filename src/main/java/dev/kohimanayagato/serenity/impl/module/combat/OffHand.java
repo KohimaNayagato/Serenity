@@ -20,6 +20,8 @@ import net.minecraftforge.fml.common.gameevent.TickEvent;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+//MADE BY LNADAV SOMETIME IN NOVEMBER 2020
+
 public class OffHand extends Module
 {
     private final Setting health = new Setting("Health", this, 10, 1, 30);
