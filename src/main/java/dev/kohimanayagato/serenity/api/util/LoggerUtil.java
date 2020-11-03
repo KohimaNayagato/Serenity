@@ -13,8 +13,7 @@ public class LoggerUtil
 	public static void sendMessage(String message, boolean waterMark)
 	{
 		StringBuilder messageBuilder = new StringBuilder();
-		if (waterMark) messageBuilder.append("&7[&9Serenity&7] ");
-		messageBuilder.append("&7").append(message);
+		if (waterMark) messageBuilder.append("[Serenity] ");
 		Minecraft.getMinecraft().ingameGUI.getChatGUI().printChatMessage(new TextComponentString(messageBuilder.toString().replace("&", "§")));
 	}
 }
