@@ -40,4 +40,9 @@ public class SettingManager
 
 		return null;
 	}
+
+	public ArrayList<Setting> getSettings()
+	{
+		return settings;
+	}
 }

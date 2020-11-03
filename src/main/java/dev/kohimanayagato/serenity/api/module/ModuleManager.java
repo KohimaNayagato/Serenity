@@ -14,6 +14,7 @@ import dev.kohimanayagato.serenity.impl.module.render.ClickGUI;
 import dev.kohimanayagato.serenity.impl.module.render.CustomFont;
 
 import java.util.ArrayList;
+import java.util.stream.Collectors;
 
 public class ModuleManager
 {
@@ -62,5 +63,10 @@ public class ModuleManager
 		}
 
 		return mods;
+	}
+
+	public ArrayList<Module> getEnabledModules()
+	{
+		return modules.stream().filter(Module::isEnabled).collect(Collectors.toCollection(ArrayList::new));
 	}
 }

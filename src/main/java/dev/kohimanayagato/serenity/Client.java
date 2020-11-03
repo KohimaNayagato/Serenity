@@ -9,6 +9,7 @@ import dev.kohimanayagato.serenity.api.util.font.CustomFontRenderer;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import dev.kohimanayagato.serenity.api.manager.ConfigManager;
 
 import java.awt.*;
 
@@ -30,6 +31,9 @@ public class Client
 		customFontRenderer = new CustomFontRenderer(new Font("Verdana", Font.PLAIN, 19), true, false);
 		clickGUI = new ClickGUI();
 
+		ConfigManager.loadConfig();
+
+		Runtime.getRuntime().addShutdownHook(new ConfigManager());
 		MinecraftForge.EVENT_BUS.register(new EventHandler());
 	}
 }
