@@ -4,6 +4,7 @@ import dev.kohimanayagato.serenity.impl.module.combat.AutoLog;
 import dev.kohimanayagato.serenity.impl.module.combat.AutoTrap;
 import dev.kohimanayagato.serenity.impl.module.combat.Criticals;
 import dev.kohimanayagato.serenity.impl.module.combat.Surround;
+import dev.kohimanayagato.serenity.impl.module.combat.Offhand;
 import dev.kohimanayagato.serenity.impl.module.exploit.Blink;
 import dev.kohimanayagato.serenity.impl.module.exploit.PacketMine;
 import dev.kohimanayagato.serenity.impl.module.chat.ChatSuffix;
@@ -42,6 +43,7 @@ public class ModuleManager
 		modules.add(new Surround("Surround", "Places blocks around you", Category.COMBAT));
 		modules.add(new AutoTrap("AutoTrap", "Traps players", Category.COMBAT));
 		modules.add(new AutoLog("AutoLog", "Automatically logs out when your health is low", Category.COMBAT));
+		modules.add(new Offhand("Offhand", "Automatically holds items in your offhand slot", Category.COMBAT));
 
 		// Movement Category
 		modules.add(new Speed("Speed", "Allows you to move faster", Category.MOVEMENT));
