@@ -7,11 +7,15 @@ import dev.kohimanayagato.serenity.impl.module.combat.Surround;
 import dev.kohimanayagato.serenity.impl.module.exploit.Blink;
 import dev.kohimanayagato.serenity.impl.module.exploit.PacketMine;
 import dev.kohimanayagato.serenity.impl.module.chat.ChatSuffix;
+import dev.kohimanayagato.serenity.impl.module.chat.Shrug;
 import dev.kohimanayagato.serenity.impl.module.exploit.Timer;
 import dev.kohimanayagato.serenity.impl.module.movement.LongJump;
 import dev.kohimanayagato.serenity.impl.module.movement.Speed;
+import dev.kohimanayagato.serenity.impl.module.movement.Sprint;
+import dev.kohimanayagato.serenity.impl.module.movement.Anchor;
 import dev.kohimanayagato.serenity.impl.module.render.ClickGUI;
 import dev.kohimanayagato.serenity.impl.module.render.CustomFont;
+
 
 import java.util.ArrayList;
 import java.util.stream.Collectors;
