@@ -10,11 +10,11 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 
-public class Anchor extends Module
+public class AutoHole extends Module
 {
     Setting holeOnly = new Setting("HoleOnly", this, true);
 
-    public Anchor(String name, String description, Category category)
+    public AutoHole(String name, String description, Category category)
     {
         super(name, description, category);
 
