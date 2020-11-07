@@ -4,5 +4,7 @@
 build/*
 .settings/*
 bin/*
+run/*
 .classpath
 .project
+run/options.txt
