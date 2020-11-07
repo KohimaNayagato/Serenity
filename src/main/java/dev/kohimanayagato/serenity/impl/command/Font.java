@@ -40,4 +40,8 @@ public class Font extends Command
 			LoggerUtil.sendMessage("Invalid font");
 		}
 	}
+
+	public void onRun(String arguments) {
+
+	}
 }

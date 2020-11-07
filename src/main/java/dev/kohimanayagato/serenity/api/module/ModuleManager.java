@@ -13,7 +13,7 @@ import dev.kohimanayagato.serenity.impl.module.exploit.Timer;
 import dev.kohimanayagato.serenity.impl.module.movement.LongJump;
 import dev.kohimanayagato.serenity.impl.module.movement.Speed;
 import dev.kohimanayagato.serenity.impl.module.movement.Sprint;
-import dev.kohimanayagato.serenity.impl.module.movement.Anchor;
+import dev.kohimanayagato.serenity.impl.module.movement.AutoHole;
 import dev.kohimanayagato.serenity.impl.module.render.ClickGUI;
 import dev.kohimanayagato.serenity.impl.module.render.CustomFont;
 
@@ -48,7 +48,7 @@ public class ModuleManager
 		// Movement Category
 		modules.add(new Speed("Speed", "Allows you to move faster", Category.MOVEMENT));
 		modules.add(new Sprint("Sprint", "Automatically toggles sprint for you", Category.MOVEMENT));
-		modules.add(new Anchor("Anchor", "Automatically goes into holes for you", Category.MOVEMENT));
+		modules.add(new AutoHole("AutoHole", "Automatically goes into holes for you", Category.MOVEMENT));
 		modules.add(new LongJump("LongJump", "Jumps far", Category.MOVEMENT));
 
 		// Chat Category

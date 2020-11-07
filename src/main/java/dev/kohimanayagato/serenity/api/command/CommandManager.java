@@ -1,10 +1,7 @@
 package dev.kohimanayagato.serenity.api.command;
 
 import dev.kohimanayagato.serenity.api.util.LoggerUtil;
-import dev.kohimanayagato.serenity.impl.command.Font;
-import dev.kohimanayagato.serenity.impl.command.Help;
-import dev.kohimanayagato.serenity.impl.command.Login;
-import dev.kohimanayagato.serenity.impl.command.Prefix;
+import dev.kohimanayagato.serenity.impl.command.*;
 
 import java.util.ArrayList;
 
@@ -20,6 +17,7 @@ public class CommandManager
 		commands.add(new Prefix("Prefix", new String[]{"prefix"}, "prefix <char>"));
 		commands.add(new Login("Login", new String[]{"login"}, "login <email> <password>"));
 		commands.add(new Font("Font", new String[]{"font"}, "font <font>"));
+		commands.add(new Bind("Bind", new String[]{"bind"}, "bind <module> <key>"));
 	}
 
 	public void runCommand(String args)

@@ -21,4 +21,9 @@ public class Help extends Command
 			LoggerUtil.sendMessage(command.getName() + " - " + command.getUsage());
 		}
 	}
+
+	public void onRun(String arguments) {
+
+	}
+
 }

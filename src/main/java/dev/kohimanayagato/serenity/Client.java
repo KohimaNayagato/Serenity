@@ -36,4 +36,8 @@ public class Client
 		Runtime.getRuntime().addShutdownHook(new ConfigManager());
 		MinecraftForge.EVENT_BUS.register(new EventHandler());
 	}
+	public static ModuleManager getModuleManager()
+	{
+		return moduleManager;
+	}
 }

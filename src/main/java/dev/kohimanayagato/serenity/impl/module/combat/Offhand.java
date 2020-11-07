@@ -3,25 +3,19 @@ package dev.kohimanayagato.serenity.impl.module.combat;
 import dev.kohimanayagato.serenity.api.module.Category;
 import dev.kohimanayagato.serenity.api.module.Module;
 import dev.kohimanayagato.serenity.api.setting.Setting;
-import dev.kohimanayagato.serenity.api.setting.SettingType;
-import dev.kohimanayagato.serenity.api.command.Command;
-import dev.kohimanayagato.serenity.api.util.PlayerUtil;
 import dev.kohimanayagato.serenity.api.util.LoggerUtil;
-import net.minecraft.client.gui.GuiMainMenu;
-import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.init.Items;
 import net.minecraft.inventory.ClickType;
 import net.minecraft.inventory.ContainerPlayer;
-import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
-import java.util.ArrayList;
 import java.util.Arrays;
 
 // Made by Lnadav
 
+//TODO Add Totem Check
 public class Offhand extends Module
 {
     private final Setting health = new Setting("Health", this, 10, 1, 30);
@@ -70,8 +64,8 @@ public class Offhand extends Module
 				replaceOffHand(TotemCache);
 				
 				
-				/* Essiently everything within this block is finding the next totem, We first define the size of the inventory, then loops through it and
-				the first totem it finds it adds to the Totem cache. More on that cache later, I put this to only do this After everything else to improve effiency*/
+				/* Essentially everything within this block is finding the next totem, We first define the size of the inventory, then loops through it and
+				the first totem it finds it adds to the Totem cache. More on that cache later, I put this to only do this After everything else to improve efficiency*/
 				inv = mc.player.inventory.mainInventory;
 				for (InvID = 0; InvID < inv.size(); InvID++) {
 					if (inv.get(InvID) != ItemStack.EMPTY) {

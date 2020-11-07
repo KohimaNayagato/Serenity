@@ -4,7 +4,7 @@ import dev.kohimanayagato.serenity.Client;
 import dev.kohimanayagato.serenity.api.util.LoggerUtil;
 
 
-public class Command
+public abstract class Command
 {
 	private String name;
 	private String[] alias;
@@ -53,4 +53,6 @@ public class Command
 	{
 		this.usage = usage;
 	}
+
+    public abstract void onRun(String arguments);
 }

@@ -24,4 +24,8 @@ public class Prefix extends Command
 		Client.commandManager.setPrefix(arguments);
 		LoggerUtil.sendMessage("Prefix set to " + arguments);
 	}
+
+	public void onRun(String arguments) {
+
+	}
 }
