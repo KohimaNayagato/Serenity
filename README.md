@@ -18,3 +18,5 @@
 
 ## Credits
 Thanks to [Kataje](https://github.com/Katatje) for their [ClientAPI](https://github.com/Katatje/ClientAPI)
+
+Thanks to [Minn](https://github.com/MinnDevelopment) for their [Discord RPC](https://github.com/MinnDevelopment/java-discord-rpc)
