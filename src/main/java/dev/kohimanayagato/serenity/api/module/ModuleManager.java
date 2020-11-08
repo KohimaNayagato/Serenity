@@ -10,6 +10,7 @@ import dev.kohimanayagato.serenity.impl.module.exploit.PacketMine;
 import dev.kohimanayagato.serenity.impl.module.chat.ChatSuffix;
 import dev.kohimanayagato.serenity.impl.module.chat.Shrug;
 import dev.kohimanayagato.serenity.impl.module.exploit.Timer;
+import dev.kohimanayagato.serenity.impl.module.misc.RPC;
 import dev.kohimanayagato.serenity.impl.module.movement.LongJump;
 import dev.kohimanayagato.serenity.impl.module.movement.Speed;
 import dev.kohimanayagato.serenity.impl.module.movement.Sprint;
@@ -54,6 +55,9 @@ public class ModuleManager
 		// Chat Category
 		modules.add(new ChatSuffix("ChatSuffix", "Adds a suffix to your chat messages", Category.CHAT));
 		modules.add(new Shrug("Shrug", "Adds the shrug emoji when used", Category.CHAT));
+
+		// Misc Category
+		modules.add(new RPC("DiscordRPC", "Shares your game status in Discord", Category.MISC));
 
 	}
 
