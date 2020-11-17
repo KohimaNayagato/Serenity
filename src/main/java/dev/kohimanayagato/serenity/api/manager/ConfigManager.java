@@ -4,6 +4,7 @@ import dev.kohimanayagato.serenity.Client;
 import dev.kohimanayagato.serenity.api.module.Module;
 import dev.kohimanayagato.serenity.api.setting.Setting;
 import dev.kohimanayagato.serenity.api.util.FileUtil;
+import dev.kohimanayagato.serenity.api.util.FriendUtil;
 import net.minecraft.client.Minecraft;
 
 import java.io.File;
@@ -18,6 +19,7 @@ public class ConfigManager extends Thread
     private static final String ENABLED_MODULES = "EnabledModules.txt";
     private static final String SETTINGS = "Settings.txt";
     private static final String BINDS = "Binds.txt";
+    private static final String FRIENDS = "Friends.txt";
 
     @Override
     public void run()
@@ -32,10 +34,12 @@ public class ConfigManager extends Thread
 
         try { FileUtil.saveFile(new File(mainFolder.getAbsolutePath(), BINDS), Client.moduleManager.getModules().stream().map(module -> module.getName() + ":" + module.getBind()).collect(Collectors.toCollection(ArrayList::new))); }
         catch(IOException e) { e.printStackTrace(); }
+
+        try { FileUtil.saveFile(new File(mainFolder.getAbsolutePath(), FRIENDS), Client.friendManager.getFriends().stream().map(FriendUtil::getName).collect(Collectors.toCollection(ArrayList::new))); }
+        catch (IOException e) { e.printStackTrace(); }
     }
 
-    public static void loadConfig()
-    {
+    public static void loadConfig() throws IOException {
         if (!mainFolder.exists()) return;
 
         try
@@ -77,6 +81,13 @@ public class ConfigManager extends Thread
                     e.printStackTrace();
                 }
             }
+
+            for (String s : FileUtil.loadFile(new File(mainFolder.getAbsolutePath(), FRIENDS)))
+            {
+                try { Client.getFriendManager().addFriend(s); }
+                catch (Exception e) { e.printStackTrace(); }
+            }
+
         }
         catch (IOException e)
         {
