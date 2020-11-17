@@ -17,6 +17,8 @@ import dev.kohimanayagato.serenity.impl.module.movement.Sprint;
 import dev.kohimanayagato.serenity.impl.module.movement.AutoHole;
 import dev.kohimanayagato.serenity.impl.module.render.ClickGUI;
 import dev.kohimanayagato.serenity.impl.module.render.CustomFont;
+//import dev.kohimanayagato.serenity.impl.module.render.HoleESP;
+import dev.kohimanayagato.serenity.impl.module.render.Watermark;
 
 
 import java.util.ArrayList;
@@ -33,6 +35,8 @@ public class ModuleManager
 
 		// Render Category
 		modules.add(new CustomFont("CustomFont", "Use a custom font render instead of Minecraft's default", Category.RENDER));
+		//modules.add(new HoleESP( "HoleEsp", "Renders nearby holes", Category.RENDER));
+		modules.add(new Watermark ("Watermark", "Puts a watermark of serenity in the corner of your screen", Category.RENDER));
 
 		// Exploit Category
 		modules.add(new PacketMine("PacketMine", "Mine blocks with packets", Category.EXPLOIT));
@@ -58,6 +62,7 @@ public class ModuleManager
 
 		// Misc Category
 		modules.add(new RPC("DiscordRPC", "Shares your game status in Discord", Category.MISC));
+
 
 	}
 
