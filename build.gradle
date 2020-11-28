@@ -27,7 +27,7 @@ apply plugin: "org.spongepowered.mixin"
 apply plugin: "com.github.johnrengelman.shadow"
 
 group = "Serenity"
-version = "0.5"
+version = "0.6"
 archivesBaseName = "Serenity"
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = "1.8"
