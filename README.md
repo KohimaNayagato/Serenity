@@ -17,6 +17,6 @@
  3. Add `-Dfml.coreMods.load=MixinLoader` to VM options.
 
 ## Credits
-Thanks to [Kataje](https://github.com/Katatje) for their [ClientAPI](https://github.com/Katatje/ClientAPI)
+Thanks to [Kataje](https://github.com/Katatje) for their [ClientAPI](https://github.com/Katatje/ClientAPI) and [Dream](https://github.com/Katatje/Dream) (This project would be impossible without Kataje)
 
 Thanks to [Minn](https://github.com/MinnDevelopment) for their [Discord RPC](https://github.com/MinnDevelopment/java-discord-rpc)
