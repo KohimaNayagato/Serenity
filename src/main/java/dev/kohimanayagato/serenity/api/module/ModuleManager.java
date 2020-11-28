@@ -11,6 +11,7 @@ import dev.kohimanayagato.serenity.impl.module.movement.LongJump;
 import dev.kohimanayagato.serenity.impl.module.movement.Speed;
 import dev.kohimanayagato.serenity.impl.module.movement.Sprint;
 import dev.kohimanayagato.serenity.impl.module.movement.AutoHole;
+import dev.kohimanayagato.serenity.impl.module.render.BlockHighlight;
 import dev.kohimanayagato.serenity.impl.module.render.ClickGUI;
 import dev.kohimanayagato.serenity.impl.module.render.CustomFont;
 //import dev.kohimanayagato.serenity.impl.module.render.HoleESP;
@@ -33,6 +34,7 @@ public class ModuleManager
 		// Render Category
 		modules.add(new CustomFont("CustomFont", "Use a custom font render instead of Minecraft's default", Category.RENDER));
 		modules.add(new HoleESP( "HoleESP", "Renders safe holes from Crystals", Category.RENDER));
+		modules.add(new BlockHighlight( "BlockHighlight", "Highlights the block you're looking at", Category.RENDER));
 
 		// Exploit Category
 		modules.add(new PacketMine("PacketMine", "Mine blocks with packets", Category.EXPLOIT));
