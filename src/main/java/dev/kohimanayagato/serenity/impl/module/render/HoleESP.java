@@ -1,6 +1,6 @@
 package dev.kohimanayagato.serenity.impl.module.render;
 
-import cat.yoink.yoinkhack.api.util.HoleUtil;
+import dev.kohimanayagato.serenity.api.util.HoleUtil;
 import dev.kohimanayagato.serenity.api.module.Category;
 import dev.kohimanayagato.serenity.api.module.Module;
 import dev.kohimanayagato.serenity.api.setting.Setting;

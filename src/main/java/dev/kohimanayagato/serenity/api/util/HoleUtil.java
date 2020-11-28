@@ -1,4 +1,4 @@
-package cat.yoink.yoinkhack.api.util;
+package dev.kohimanayagato.serenity.api.util;
 
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3i;
