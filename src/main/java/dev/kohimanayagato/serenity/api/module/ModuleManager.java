@@ -40,6 +40,7 @@ public class ModuleManager
 
 		// Combat Category
 		modules.add(new Criticals("Criticals", "Deal critical hits without jumping", Category.COMBAT));
+		modules.add(new AutoCrystal("AutoCrystal", "Automatically attack other players with Crystals", Category.COMBAT));
 		modules.add(new Surround("Surround", "Places blocks around you", Category.COMBAT));
 		modules.add(new AutoTrap("AutoTrap", "Traps players", Category.COMBAT));
 		modules.add(new AutoLog("AutoLog", "Automatically logs out when your health is low", Category.COMBAT));
