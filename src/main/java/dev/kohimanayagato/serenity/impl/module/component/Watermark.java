@@ -1,4 +1,4 @@
-package dev.kohimanayagato.serenity.impl.module.render;
+package dev.kohimanayagato.serenity.impl.module.component;
 
 
 import dev.kohimanayagato.serenity.api.module.Category;

@@ -18,6 +18,7 @@ public class CommandManager
 		commands.add(new Login("Login", new String[]{"login"}, "login <email> <password>"));
 		commands.add(new Font("Font", new String[]{"font"}, "font <font>"));
 		commands.add(new Bind("Bind", new String[]{"bind"}, "bind <module> <key>"));
+		commands.add(new Friend("Friend", new String[]{"friend"}, "friend <add/del/list> <name>"));
 	}
 
 	public void runCommand(String args)

@@ -1,10 +1,6 @@
 package dev.kohimanayagato.serenity.api.module;
 
-import dev.kohimanayagato.serenity.impl.module.combat.AutoLog;
-import dev.kohimanayagato.serenity.impl.module.combat.AutoTrap;
-import dev.kohimanayagato.serenity.impl.module.combat.Criticals;
-import dev.kohimanayagato.serenity.impl.module.combat.Surround;
-import dev.kohimanayagato.serenity.impl.module.combat.Offhand;
+import dev.kohimanayagato.serenity.impl.module.combat.*;
 import dev.kohimanayagato.serenity.impl.module.exploit.Blink;
 import dev.kohimanayagato.serenity.impl.module.exploit.PacketMine;
 import dev.kohimanayagato.serenity.impl.module.chat.ChatSuffix;
@@ -18,7 +14,7 @@ import dev.kohimanayagato.serenity.impl.module.movement.AutoHole;
 import dev.kohimanayagato.serenity.impl.module.render.ClickGUI;
 import dev.kohimanayagato.serenity.impl.module.render.CustomFont;
 //import dev.kohimanayagato.serenity.impl.module.render.HoleESP;
-import dev.kohimanayagato.serenity.impl.module.render.Watermark;
+import dev.kohimanayagato.serenity.impl.module.component.Watermark;
 
 
 import java.util.ArrayList;
@@ -36,7 +32,6 @@ public class ModuleManager
 		// Render Category
 		modules.add(new CustomFont("CustomFont", "Use a custom font render instead of Minecraft's default", Category.RENDER));
 		//modules.add(new HoleESP( "HoleEsp", "Renders nearby holes", Category.RENDER));
-		modules.add(new Watermark ("Watermark", "Puts a watermark of serenity in the corner of your screen", Category.RENDER));
 
 		// Exploit Category
 		modules.add(new PacketMine("PacketMine", "Mine blocks with packets", Category.EXPLOIT));
@@ -48,7 +43,7 @@ public class ModuleManager
 		modules.add(new Surround("Surround", "Places blocks around you", Category.COMBAT));
 		modules.add(new AutoTrap("AutoTrap", "Traps players", Category.COMBAT));
 		modules.add(new AutoLog("AutoLog", "Automatically logs out when your health is low", Category.COMBAT));
-		modules.add(new Offhand("Offhand", "Automatically holds items in your offhand slot", Category.COMBAT));
+		modules.add(new Auto32K("Auto32K", "Automatically handles 32ks for you in combat", Category.COMBAT));
 
 		// Movement Category
 		modules.add(new Speed("Speed", "Allows you to move faster", Category.MOVEMENT));
@@ -63,6 +58,9 @@ public class ModuleManager
 		// Misc Category
 		modules.add(new RPC("DiscordRPC", "Shares your game status in Discord", Category.MISC));
 
+		//Component Category
+		modules.add(new Watermark ("Watermark", "Puts a watermark of serenity in the corner of your screen", Category.COMPONENT));
+		//modules.add(new ArrayList("ArrayList", "Displays enabled modules", Category.COMPONENT));
 
 	}
 
