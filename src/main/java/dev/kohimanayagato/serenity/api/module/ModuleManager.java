@@ -15,6 +15,7 @@ import dev.kohimanayagato.serenity.impl.module.render.ClickGUI;
 import dev.kohimanayagato.serenity.impl.module.render.CustomFont;
 //import dev.kohimanayagato.serenity.impl.module.render.HoleESP;
 import dev.kohimanayagato.serenity.impl.module.component.Watermark;
+import dev.kohimanayagato.serenity.impl.module.render.HoleESP;
 
 
 import java.util.ArrayList;
@@ -31,7 +32,7 @@ public class ModuleManager
 
 		// Render Category
 		modules.add(new CustomFont("CustomFont", "Use a custom font render instead of Minecraft's default", Category.RENDER));
-		//modules.add(new HoleESP( "HoleEsp", "Renders nearby holes", Category.RENDER));
+		modules.add(new HoleESP( "HoleESP", "Renders safe holes from Crystals", Category.RENDER));
 
 		// Exploit Category
 		modules.add(new PacketMine("PacketMine", "Mine blocks with packets", Category.EXPLOIT));
