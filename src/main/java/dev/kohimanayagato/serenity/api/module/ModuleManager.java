@@ -1,12 +1,11 @@
 package dev.kohimanayagato.serenity.api.module;
 
+import dev.kohimanayagato.serenity.impl.module.chat.AutoEZ;
+import dev.kohimanayagato.serenity.impl.module.chat.BetterChat;
 import dev.kohimanayagato.serenity.impl.module.combat.*;
-import dev.kohimanayagato.serenity.impl.module.exploit.Blink;
-import dev.kohimanayagato.serenity.impl.module.exploit.PacketMine;
+import dev.kohimanayagato.serenity.impl.module.misc.*;
 import dev.kohimanayagato.serenity.impl.module.chat.ChatSuffix;
 import dev.kohimanayagato.serenity.impl.module.chat.Shrug;
-import dev.kohimanayagato.serenity.impl.module.exploit.Timer;
-import dev.kohimanayagato.serenity.impl.module.misc.RPC;
 import dev.kohimanayagato.serenity.impl.module.movement.LongJump;
 import dev.kohimanayagato.serenity.impl.module.movement.Speed;
 import dev.kohimanayagato.serenity.impl.module.movement.Sprint;
@@ -15,7 +14,7 @@ import dev.kohimanayagato.serenity.impl.module.render.BlockHighlight;
 import dev.kohimanayagato.serenity.impl.module.render.ClickGUI;
 import dev.kohimanayagato.serenity.impl.module.render.CustomFont;
 //import dev.kohimanayagato.serenity.impl.module.render.HoleESP;
-import dev.kohimanayagato.serenity.impl.module.component.Watermark;
+import dev.kohimanayagato.serenity.impl.module.render.Watermark;
 import dev.kohimanayagato.serenity.impl.module.render.HoleESP;
 
 
@@ -35,12 +34,8 @@ public class ModuleManager
 		modules.add(new CustomFont("CustomFont", "Use a custom font render instead of Minecraft's default", Category.RENDER));
 		modules.add(new HoleESP( "HoleESP", "Renders safe holes from Crystals", Category.RENDER));
 		modules.add(new BlockHighlight( "BlockHighlight", "Highlights the block you're looking at", Category.RENDER));
-
-		// Exploit Category
-		modules.add(new PacketMine("PacketMine", "Mine blocks with packets", Category.EXPLOIT));
-		modules.add(new Timer("Timer", "Speeds up your game", Category.EXPLOIT));
-		modules.add(new Blink("Blink", "Fake lag", Category.EXPLOIT));
-
+		modules.add(new Watermark ("Watermark", "Puts a watermark of serenity in the corner of your screen", Category.RENDER));
+		
 		// Combat Category
 		modules.add(new Criticals("Criticals", "Deal critical hits without jumping", Category.COMBAT));
 		modules.add(new AutoCrystal("AutoCrystal", "Automatically attack other players with Crystals", Category.COMBAT));
@@ -58,12 +53,18 @@ public class ModuleManager
 		// Chat Category
 		modules.add(new ChatSuffix("ChatSuffix", "Adds a suffix to your chat messages", Category.CHAT));
 		modules.add(new Shrug("Shrug", "Adds the shrug emoji when used", Category.CHAT));
+		modules.add(new AutoEZ("AutoEZ", "Automatically announces in chat when you get a kill", Category.CHAT));
+		modules.add(new BetterChat("BetterChat", "Modifies the look of your ingame chat", Category.CHAT));
 
 		// Misc Category
 		modules.add(new RPC("DiscordRPC", "Shares your game status in Discord", Category.MISC));
+		modules.add(new AutoDupe("AutoDupe", "Automatically performs the SalC1 TreeMC dupe", Category.MISC));
+		modules.add(new PacketMine("PacketMine", "Mine blocks with packets", Category.MISC));
+		modules.add(new Timer("Timer", "Speeds up your game", Category.MISC));
+		modules.add(new Blink("Blink", "Fake lag", Category.MISC));
 
 		//Component Category
-		modules.add(new Watermark ("Watermark", "Puts a watermark of serenity in the corner of your screen", Category.COMPONENT));
+		//modules.add(new Watermark ("Watermark", "Puts a watermark of serenity in the corner of your screen", Category.COMPONENT));
 		//modules.add(new ArrayList("ArrayList", "Displays enabled modules", Category.COMPONENT));
 
 	}

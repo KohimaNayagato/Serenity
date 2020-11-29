@@ -3,12 +3,11 @@ package dev.kohimanayagato.serenity.api.module;
 public enum Category
 {
 	COMBAT("Combat"),
-	EXPLOIT("Exploit"),
 	RENDER("Render"),
 	MOVEMENT("Movement"),
 	CHAT("Chat"),
 	MISC("Miscellaneous"),
-	COMPONENT("Component"),
+	//COMPONENT("Component"),
 	HIDDEN("Hidden");
 
 	private String name;

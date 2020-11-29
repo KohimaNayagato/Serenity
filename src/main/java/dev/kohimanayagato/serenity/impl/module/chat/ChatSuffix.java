@@ -4,6 +4,7 @@ package dev.kohimanayagato.serenity.impl.module.chat;
 import dev.kohimanayagato.serenity.Client;
 import dev.kohimanayagato.serenity.api.module.Category;
 import dev.kohimanayagato.serenity.api.module.Module;
+import net.minecraft.network.play.client.CPacketChatMessage;
 import net.minecraftforge.client.event.ClientChatEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
@@ -37,8 +38,6 @@ public class ChatSuffix extends Module
 		}
 
 		String msg;
-
-
 		{
 			msg = String.format("%s \uFF5C Serenity", event.getMessage());
 		}

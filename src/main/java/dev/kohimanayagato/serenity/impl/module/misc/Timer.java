@@ -1,4 +1,4 @@
-package dev.kohimanayagato.serenity.impl.module.exploit;
+package dev.kohimanayagato.serenity.impl.module.misc;
 
 import dev.kohimanayagato.serenity.api.module.Category;
 import dev.kohimanayagato.serenity.api.module.Module;
