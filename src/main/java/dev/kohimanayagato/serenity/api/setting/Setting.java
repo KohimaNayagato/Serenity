@@ -88,6 +88,12 @@ public class Setting
 		return maxIntegerValue;
 	}
 
+	public boolean isInteger() { return type.equals("int"); }
+
+	public boolean isBoolean() { return type.equals("boolean"); }
+
+	public boolean isEnum() { return type.equals("enum"); }
+
 	public String getEnumValue()
 	{
 		return enumValue;
