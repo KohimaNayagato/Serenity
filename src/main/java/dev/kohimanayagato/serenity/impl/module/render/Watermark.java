@@ -35,16 +35,16 @@ public class Watermark extends Module
         if (nullCheck() || !event.getType().equals(RenderGameOverlayEvent.ElementType.TEXT)) return;
 
         if(Position.getEnumValue().equalsIgnoreCase("Right Top")) {
-            FontUtil.drawStringWithShadow("Serenity Alpha 0.6-DEV", screen.getScaledWidth_double() - FontUtil.getStringWidth("Serenity Alpha 0.6-DEV") - 4, 2.0D , new Color(255, 255, 255, 232).getRGB() ); }
+            FontUtil.drawStringWithShadow("Serenity 0.6.1", screen.getScaledWidth_double() - FontUtil.getStringWidth("Serenity Alpha 0.6-DEV") - 4, 2.0D , new Color(255, 255, 255, 232).getRGB() ); }
 
         if(Position.getEnumValue().equalsIgnoreCase("Right Bottom")) {
-            FontUtil.drawStringWithShadow("Serenity Alpha 0.6-DEV", screen.getScaledWidth_double() - FontUtil.getStringWidth("Serenity Alpha 0.6-DEV") - 4, screen.getScaledHeight_double() - FontUtil.getFontHeight() + 1 , new Color(255, 255, 255, 232).getRGB() ); }
+            FontUtil.drawStringWithShadow("Serenity 0.6.1", screen.getScaledWidth_double() - FontUtil.getStringWidth("Serenity Alpha 0.6-DEV") - 4, screen.getScaledHeight_double() - FontUtil.getFontHeight() + 1 , new Color(255, 255, 255, 232).getRGB() ); }
 
         if(Position.getEnumValue().equalsIgnoreCase("Left Top")) {
-            FontUtil.drawStringWithShadow("Serenity Alpha 0.6-DEV", 2.0D, 2.0D , new Color(255, 255, 255, 232).getRGB() ); }
+            FontUtil.drawStringWithShadow("Serenity 0.6.1", 2.0D, 2.0D , new Color(255, 255, 255, 232).getRGB() ); }
 
         if(Position.getEnumValue().equalsIgnoreCase("Left Bottom")) {
-            FontUtil.drawStringWithShadow("Serenity Alpha 0.6-DEV", 2.0D,  screen.getScaledHeight_double() - FontUtil.getFontHeight() - 2, new Color(255, 255, 255, 232).getRGB() ); }
+            FontUtil.drawStringWithShadow("Serenity 0.6.1", 2.0D,  screen.getScaledHeight_double() - FontUtil.getFontHeight() - 2, new Color(255, 255, 255, 232).getRGB() ); }
     }
 
 }
