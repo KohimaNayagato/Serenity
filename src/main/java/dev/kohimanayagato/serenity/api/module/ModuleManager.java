@@ -9,9 +9,7 @@ import dev.kohimanayagato.serenity.impl.module.misc.*;
 import dev.kohimanayagato.serenity.impl.module.chat.ChatSuffix;
 import dev.kohimanayagato.serenity.impl.module.chat.Shrug;
 import dev.kohimanayagato.serenity.impl.module.movement.*;
-import dev.kohimanayagato.serenity.impl.module.render.BlockHighlight;
-import dev.kohimanayagato.serenity.impl.module.render.ClickGUI;
-import dev.kohimanayagato.serenity.impl.module.render.CustomFont;
+import dev.kohimanayagato.serenity.impl.module.render.*;
 //import dev.kohimanayagato.serenity.impl.module.render.HoleESP;
 import dev.kohimanayagato.serenity.impl.module.render.Watermark;
 import dev.kohimanayagato.serenity.impl.module.render.HoleESP;
@@ -35,6 +33,7 @@ public class ModuleManager
 		modules.add(new HoleESP( "HoleESP", "Renders safe holes from Crystals", Category.RENDER));
 		modules.add(new BlockHighlight( "BlockHighlight", "Highlights the block you're looking at", Category.RENDER));
 		modules.add(new Watermark ("Watermark", "Puts a watermark of serenity in the corner of your screen", Category.RENDER));
+		modules.add(new Tracers("Tracers", "Tracers to stuff", Category.RENDER));
 		
 		// Combat Category
 		modules.add(new Criticals("Criticals", "Deal critical hits without jumping", Category.COMBAT));
