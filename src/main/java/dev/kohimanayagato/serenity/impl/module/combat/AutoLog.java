@@ -15,8 +15,6 @@ public class AutoLog extends Module
     public AutoLog(String name, String description, Category category)
     {
         super(name, description, category);
-
-        addSetting(health);
     }
 
     @SubscribeEvent

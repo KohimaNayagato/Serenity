@@ -45,9 +45,6 @@ public class AutoTrap extends Module
     public AutoTrap(String name, String description, Category category)
     {
         super(name, description, category);
-
-        addSetting(blocksPerTick);
-        addSetting(disable);
     }
 
     @Override

@@ -12,8 +12,6 @@ public class Jesus extends Module {
 
     public Jesus(String name, String description, Category category) {
         super(name, description, category);
-
-        addSetting(zeroGravity);
     }
 
     @SubscribeEvent

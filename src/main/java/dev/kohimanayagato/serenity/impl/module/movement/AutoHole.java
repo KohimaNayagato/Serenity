@@ -17,8 +17,6 @@ public class AutoHole extends Module
     public AutoHole(String name, String description, Category category)
     {
         super(name, description, category);
-
-        addSetting(holeOnly);
     }
 
     @SubscribeEvent

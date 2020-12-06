@@ -51,17 +51,10 @@ public class Module
 		else enable();
 	}
 	
-		public boolean nullCheck()
+	public boolean nullCheck()
 	{
 		return mc.player == null || mc.world == null;
 	}
-
-
-	public void addSetting(Setting setting)
-	{
-		Client.settingManager.addSetting(setting);
-	}
-
 
 	public String getName()
 	{

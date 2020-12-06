@@ -65,11 +65,6 @@ public class Auto32K extends Module
     public Auto32K(String name, String description, Category category)
     {
         super(name, description, category);
-
-        addSetting(mode);
-        addSetting(aura);
-        addSetting(noClose);
-        addSetting(disable);
     }
 
     @Override

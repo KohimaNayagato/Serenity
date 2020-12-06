@@ -1,5 +1,7 @@
 package dev.kohimanayagato.serenity.api.module;
 
+import dev.kohimanayagato.serenity.Client;
+import dev.kohimanayagato.serenity.api.setting.Setting;
 import dev.kohimanayagato.serenity.impl.module.chat.AutoEZ;
 import dev.kohimanayagato.serenity.impl.module.chat.BetterChat;
 import dev.kohimanayagato.serenity.impl.module.combat.*;
@@ -15,6 +17,7 @@ import dev.kohimanayagato.serenity.impl.module.render.Watermark;
 import dev.kohimanayagato.serenity.impl.module.render.HoleESP;
 
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.stream.Collectors;
 
@@ -65,6 +68,18 @@ public class ModuleManager
 		//modules.add(new Watermark ("Watermark", "Puts a watermark of serenity in the corner of your screen", Category.COMPONENT));
 		//modules.add(new ArrayList("ArrayList", "Displays enabled modules", Category.COMPONENT));
 
+		for (Module module : modules) {
+			for (Field declaredField : module.getClass().getDeclaredFields()) {
+				declaredField.setAccessible(true);
+				if (declaredField.getType() == Setting.class) {
+					try {
+						Client.settingManager.addSetting((Setting) declaredField.get(module));
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				}
+			}
+		}
 	}
 
 	public ArrayList<Module> getModules()

@@ -39,12 +39,6 @@ public class Speed extends Module
 	public Speed(String name, String description, Category category)
 	{
 		super(name, description, category);
-
-		addSetting(mode);
-		addSetting(speed);
-		addSetting(useTimer);
-		addSetting(timerSpeed);
-		addSetting(yPortAmount);
 	}
 
 	public void onEnable()

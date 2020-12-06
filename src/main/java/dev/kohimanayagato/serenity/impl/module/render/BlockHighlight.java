@@ -29,13 +29,6 @@ public class BlockHighlight extends Module
     public BlockHighlight(String name,String description , Category category)
     {
         super(name, description, category);
-
-        addSetting(color);
-        addSetting(red);
-        addSetting(green);
-        addSetting(blue);
-        addSetting(alpha);
-        addSetting(rainbowSpeed);
     }
 
     @SubscribeEvent

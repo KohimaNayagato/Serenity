@@ -29,9 +29,6 @@ public class Offhand extends Module
     public Offhand(String name, String description, Category category)
     {
         super(name, description, category);
-
-        addSetting(health);
-		addSetting(mode);
     }
 	
 	NonNullList<ItemStack> inv;

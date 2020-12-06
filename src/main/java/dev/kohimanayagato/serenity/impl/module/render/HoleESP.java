@@ -44,19 +44,6 @@ public class HoleESP extends Module
     public HoleESP(String name, String description, Category category)
     {
         super(name, description, category);
-
-        addSetting(range);
-        addSetting(ignoreOwn);
-        addSetting(holeMode);
-        addSetting(place);
-        addSetting(obsidianRed);
-        addSetting(obsidianGreen);
-        addSetting(obsidianBlue);
-        addSetting(obsidianAlpha);
-        addSetting(bedrockRed);
-        addSetting(bedrockGreen);
-        addSetting(bedrockBlue);
-        addSetting(bedrockAlpha);
     }
 
     @SubscribeEvent
