@@ -1,23 +1,21 @@
 package dev.kohimanayagato.serenity.api.module;
 
+import dev.kohimanayagato.serenity.Client;
+import dev.kohimanayagato.serenity.api.setting.Setting;
 import dev.kohimanayagato.serenity.impl.module.chat.AutoEZ;
 import dev.kohimanayagato.serenity.impl.module.chat.BetterChat;
 import dev.kohimanayagato.serenity.impl.module.combat.*;
 import dev.kohimanayagato.serenity.impl.module.misc.*;
 import dev.kohimanayagato.serenity.impl.module.chat.ChatSuffix;
 import dev.kohimanayagato.serenity.impl.module.chat.Shrug;
-import dev.kohimanayagato.serenity.impl.module.movement.LongJump;
-import dev.kohimanayagato.serenity.impl.module.movement.Speed;
-import dev.kohimanayagato.serenity.impl.module.movement.Sprint;
-import dev.kohimanayagato.serenity.impl.module.movement.AutoHole;
-import dev.kohimanayagato.serenity.impl.module.render.BlockHighlight;
-import dev.kohimanayagato.serenity.impl.module.render.ClickGUI;
-import dev.kohimanayagato.serenity.impl.module.render.CustomFont;
+import dev.kohimanayagato.serenity.impl.module.movement.*;
+import dev.kohimanayagato.serenity.impl.module.render.*;
 //import dev.kohimanayagato.serenity.impl.module.render.HoleESP;
 import dev.kohimanayagato.serenity.impl.module.render.Watermark;
 import dev.kohimanayagato.serenity.impl.module.render.HoleESP;
 
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.stream.Collectors;
 
@@ -35,6 +33,7 @@ public class ModuleManager
 		modules.add(new HoleESP( "HoleESP", "Renders safe holes from Crystals", Category.RENDER));
 		modules.add(new BlockHighlight( "BlockHighlight", "Highlights the block you're looking at", Category.RENDER));
 		modules.add(new Watermark ("Watermark", "Puts a watermark of serenity in the corner of your screen", Category.RENDER));
+		modules.add(new Tracers("Tracers", "Tracers to stuff", Category.RENDER));
 		
 		// Combat Category
 		modules.add(new Criticals("Criticals", "Deal critical hits without jumping", Category.COMBAT));
@@ -49,6 +48,8 @@ public class ModuleManager
 		modules.add(new Sprint("Sprint", "Automatically toggles sprint for you", Category.MOVEMENT));
 		modules.add(new AutoHole("AutoHole", "Automatically goes into holes for you", Category.MOVEMENT));
 		modules.add(new LongJump("LongJump", "Jumps far", Category.MOVEMENT));
+		modules.add(new Jesus("Jesus", "Walk on water", Category.MOVEMENT));
+		modules.add(new Step("Step", "Go up blocks automatically", Category.MOVEMENT));
 
 		// Chat Category
 		modules.add(new ChatSuffix("ChatSuffix", "Adds a suffix to your chat messages", Category.CHAT));
@@ -67,6 +68,18 @@ public class ModuleManager
 		//modules.add(new Watermark ("Watermark", "Puts a watermark of serenity in the corner of your screen", Category.COMPONENT));
 		//modules.add(new ArrayList("ArrayList", "Displays enabled modules", Category.COMPONENT));
 
+		for (Module module : modules) {
+			for (Field declaredField : module.getClass().getDeclaredFields()) {
+				declaredField.setAccessible(true);
+				if (declaredField.getType() == Setting.class) {
+					try {
+						Client.settingManager.addSetting((Setting) declaredField.get(module));
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				}
+			}
+		}
 	}
 
 	public ArrayList<Module> getModules()

@@ -21,9 +21,6 @@ public class LongJump extends Module
 	public LongJump(String name, String description, Category category)
 	{
 		super(name, description, category);
-
-		addSetting(speed);
-		addSetting(packet);
 	}
 
 	@SubscribeEvent

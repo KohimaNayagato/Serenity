@@ -31,12 +31,6 @@ public class AutoEZ extends Module
     public AutoEZ(String name, String description, Category category)
     {
         super(name, description, category);
-
-        addSetting(timeoutTicks);
-        addSetting(message);
-        addSetting(zCounter);
-        addSetting(watermark);
-        addSetting(naked);
     }
 
     @Override

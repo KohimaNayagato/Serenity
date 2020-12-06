@@ -42,9 +42,6 @@ public class Surround extends Module
     public Surround(String name, String description, Category category)
     {
         super(name, description, category);
-
-        addSetting(blocksPerTick);
-        addSetting(disable);
     }
 
     @Override

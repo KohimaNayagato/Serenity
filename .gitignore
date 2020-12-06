@@ -8,3 +8,4 @@ run/*
 .classpath
 .project
 run/options.txt
+gradle/wrapper/gradle-wrapper.jar

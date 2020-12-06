@@ -23,7 +23,6 @@ public class Watermark extends Module
     public Watermark(String name, String description, Category category)
     {
         super(name, description, category);
-        addSetting(Position);
     }
 
 

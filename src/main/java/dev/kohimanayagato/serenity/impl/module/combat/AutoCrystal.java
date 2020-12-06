@@ -69,23 +69,6 @@ public class AutoCrystal extends Module
     public AutoCrystal(String name, String description, Category category)
     {
         super(name, description, category);
-
-        addSetting(attackSpeed);
-        addSetting(placeSpeed);
-        addSetting(placeRange);
-        addSetting(attackRange);
-        addSetting(minDamage);
-        addSetting(enemyRange);
-        addSetting(onlyOwn);
-        addSetting(multiPlace);
-        addSetting(facePlaceHealth);
-        addSetting(itemSwitch);
-        addSetting(color);
-        addSetting(red);
-        addSetting(green);
-        addSetting(blue);
-        addSetting(alpha);
-        addSetting(rainbowSpeed);
     }
 
     public float calculateDamage(double posX, double posY, double posZ, Entity entity)

@@ -26,8 +26,6 @@ public class PacketMine extends Module
 	public PacketMine(String name, String description, Category category)
 	{
 		super(name, description, category);
-
-		addSetting(render);
 	}
 
 	@SuppressWarnings("deprecation")

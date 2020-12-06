@@ -16,8 +16,6 @@ public class Timer extends Module
 	public Timer(String name, String description, Category category)
 	{
 		super(name, description, category);
-
-		addSetting(speed);
 	}
 
 	@SubscribeEvent

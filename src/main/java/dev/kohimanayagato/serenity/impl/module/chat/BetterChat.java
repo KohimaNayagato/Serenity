@@ -26,15 +26,6 @@ public class BetterChat extends Module
     public BetterChat(String name, String description, Category category)
     {
         super(name, description, category);
-
-        addSetting(nameColor);
-        addSetting(messageColor);
-        addSetting(bracketStyle);
-        addSetting(bracketColor);
-        addSetting(timestamp);
-        addSetting(timestampColor);
-        addSetting(timestampBracket);
-        addSetting(timestampBracketColor);
     }
 
 
