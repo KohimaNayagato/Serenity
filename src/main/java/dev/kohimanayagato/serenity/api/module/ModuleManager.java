@@ -49,6 +49,7 @@ public class ModuleManager
 		modules.add(new AutoHole("AutoHole", "Automatically goes into holes for you", Category.MOVEMENT));
 		modules.add(new LongJump("LongJump", "Jumps far", Category.MOVEMENT));
 		modules.add(new Jesus("Jesus", "Walk on water", Category.MOVEMENT));
+		modules.add(new Step("Step", "Go up blocks automatically", Category.MOVEMENT));
 
 		// Chat Category
 		modules.add(new ChatSuffix("ChatSuffix", "Adds a suffix to your chat messages", Category.CHAT));
