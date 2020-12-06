@@ -6,10 +6,7 @@ import dev.kohimanayagato.serenity.impl.module.combat.*;
 import dev.kohimanayagato.serenity.impl.module.misc.*;
 import dev.kohimanayagato.serenity.impl.module.chat.ChatSuffix;
 import dev.kohimanayagato.serenity.impl.module.chat.Shrug;
-import dev.kohimanayagato.serenity.impl.module.movement.LongJump;
-import dev.kohimanayagato.serenity.impl.module.movement.Speed;
-import dev.kohimanayagato.serenity.impl.module.movement.Sprint;
-import dev.kohimanayagato.serenity.impl.module.movement.AutoHole;
+import dev.kohimanayagato.serenity.impl.module.movement.*;
 import dev.kohimanayagato.serenity.impl.module.render.BlockHighlight;
 import dev.kohimanayagato.serenity.impl.module.render.ClickGUI;
 import dev.kohimanayagato.serenity.impl.module.render.CustomFont;
@@ -49,6 +46,7 @@ public class ModuleManager
 		modules.add(new Sprint("Sprint", "Automatically toggles sprint for you", Category.MOVEMENT));
 		modules.add(new AutoHole("AutoHole", "Automatically goes into holes for you", Category.MOVEMENT));
 		modules.add(new LongJump("LongJump", "Jumps far", Category.MOVEMENT));
+		modules.add(new Jesus("Jesus", "Walk on water", Category.MOVEMENT));
 
 		// Chat Category
 		modules.add(new ChatSuffix("ChatSuffix", "Adds a suffix to your chat messages", Category.CHAT));
