@@ -1,5 +1,6 @@
 <h1 align="center">Serenity</h1>  
 <h3 align="center">Minecraft utility mod for anarchy servers</h3>  
+<h4 align="center">0.7 releasing soon, expect huge commit within this month</h4>
   
   
 ## Installing
